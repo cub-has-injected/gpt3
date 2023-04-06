@@ -20,12 +20,11 @@ https://github.com/Zero6992/chatGPT-discord-bot (help/chat/private/public/reset 
 *It's too slow, because I didn't used cogs and other optimizing things.*
 
 Use an English language when you are using it to avoid any problems.
-Additional: DALL-E picture logging is works but any cyrillic language turns into "???".
+Additional: DALL-E picture logging is works but any cyrillic language turns into "???" on selfhost.
 
 ## I'm searching for logs!
-GPT-3: chatgpt_discord_bot.log
-
-DALL-E 2.0: dalle_discord_bot.log
+- GPT-3: chatgpt_discord_bot.log
+- DALL-E 2.0: dalle_discord_bot.log
 
 ## Don't forget!
 If you want to use GPT-3 in future or make it better, please do an fork on GitHub.
