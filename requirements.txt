@@ -5,14 +5,4 @@ revChatGPT
 requests
 Flask
 beautifulsoup4
-strawpy
-lxml
-psutil
-GitPython
-Pillow
-pyfiglet
-tokage
-pytz
-PyGithub
-google-api-python-client
 typing
