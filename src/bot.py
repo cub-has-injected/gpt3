@@ -12,13 +12,11 @@ from src.models import OpenAIModel
 from src.memory import Memory
 from src.server import keep_alive
 from cogs.utils.config import get_config_value
-import aiohttp
 from src.moderation import (
     moderate_message,
     send_moderation_blocked_message,
     send_moderation_flagged_message,
 )
-from googleapiclient.discovery import build
 
 
 load_dotenv()
