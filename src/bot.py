@@ -157,21 +157,19 @@ def run_discord_bot():
     @client.tree.command(name="chat", description="Talk with GPT-3!")
     @cooldown(1, 10, BucketType.user)
     async def chat(interaction: discord.Interaction, *, message: str):
-        isReplyAll =  os.getenv("REPLYING_ALL")
-        if isReplyAll == "True":
-            await interaction.response.defer(ephemeral=False)
-            await interaction.followup.send(
-                "> **Warn: You already on replyAll mode. If you want to use slash command, switch to normal mode, use `/replyall` again**")
-            logger.warning("\x1b[31mYou already on replyAll mode, can't use slash command!\x1b[0m")
+                if interaction.user.id == 1:
+            await interaction.response.send_message(
+               "> **Error: You are banned from using this command!**")
             return
-        if interaction.user == client.user:
-            return
-        username = str(interaction.user)
-        user_message = message
-        channel = str(interaction.channel)
-        logger.info(
-            f"\x1b[31m{username}\x1b[0m : '{user_message}' ({channel})")
-        await send_message(interaction, user_message)
+        else:
+            if interaction.user != client.user:
+                username = str(interaction.user)
+                user_message = message
+                channel = str(interaction.channel)
+                logger.info(
+                    f"\x1b[31m{username}\x1b[0m : '{user_message}' ({channel})")
+                await send_message(interaction, user_message)
+                return
         
     sender = Sender()
 
