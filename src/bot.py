@@ -200,7 +200,7 @@ def run_discord_bot():
             await interaction.followup.send(
                 "> **Warn: You are already using the private mode. If you want switch to public, then use `/public`**")
 
-    @client.tree.command(name="public", description="Включить публичный режим к вашим GPT-3 запросам.")
+    @client.tree.command(name="public", description="Make GPT-3 prompts public.")
     async def public(interaction: discord.Interaction):
         global isPrivate
         await interaction.response.defer(ephemeral=False)
@@ -230,10 +230,9 @@ def run_discord_bot():
     @client.tree.command(name="help", description="Commands and help.")
     async def help(interaction: discord.Interaction):
         await interaction.response.defer(ephemeral=False)
-        await interaction.followup.send(""":pineapple: **Commands:** \n
-        :warning: Please don't violate GPT-3 Terms Of Service, else we blocking you from using GPT-3.
-        - `/chat [Ваш запрос]` Talk with GPT-3!
-        - `/imagine [Ваш запрос]` Generate any image with DALL-E 2.0!
+        await interaction.followup.send(""":pizza: **Commands:** \n
+        - `/chat [prompt]` Talk with GPT-3!
+        - `/imagine [prompt]` Generate any image with DALL-E 2.0!
         - `/public` Switch GPT-3 to public mode.
         - `/private` Switch GPT-3 to private mode.
         - `/reset` Clear GPT-3 history with your prompts to make results better.\n""")
