@@ -26,4 +26,4 @@ DALL-E picture logging is works but any cyrillic language turns into "???" on se
 - DALL-E 2.0: dalle_discord_bot.log
 
 ## You can use GPT-3 everywhere where you want.
-I don't care about it now, because I have more better version of this. ¯\_(ツ)_/¯
+I don't care about it now, because I have more better version of this. `¯\_(ツ)_/¯`
