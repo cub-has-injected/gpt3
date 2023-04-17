@@ -13,13 +13,12 @@ Also, It should support google search engine but didn't released still.
 Setup your api keys in env.dev and rename it to .env in folder on your PC, also view [this source](https://github.com/Zero6992/chatGPT-discord-bot#setup) for more info about setting up your bot. (it's almost same and won't ruin anything related to gpt3)
 
 ## Which sources was used?
-https://github.com/TheExplainthis/ChatGPT-Discord-Bot/blob/main/README.en.md (DALL-E 2.0 command) (already in Zero6992 source)
+https://github.com/TheExplainthis/ChatGPT-Discord-Bot/blob/main/README.en.md (DALL-E 2.0 command) `dalle 2.0 command included in Zero6992 source`
+
 https://github.com/Zero6992/chatGPT-discord-bot (help/chat/private/public/reset commands)
 
 ## It still have any issues?
-*It's too slow, because I didn't used cogs and other optimizing things.*
-
-Additional: DALL-E picture logging is works but any cyrillic language turns into "???" on selfhost.
+DALL-E picture logging is works but any cyrillic language turns into "???" on selfhost.
 
 ## I'm searching for logs!
 - GPT-3: chatgpt_discord_bot.log
